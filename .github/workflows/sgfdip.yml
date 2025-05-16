@@ -3,7 +3,7 @@ name: Update Singapore IPs and DNS
 on:
   workflow_dispatch:
   schedule:
-    - cron: '10 8,20 * * *'  # 每12小时运行一次，可以根据需求调整
+    - cron: '0 0/12 * * *'  # 每12小时运行一次，可以根据需求调整
 
 jobs:
   update_ips_and_dns:
